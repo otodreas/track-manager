@@ -316,11 +316,14 @@ If you encounter other issues:
 
 ## Development
 
-For development, install with dev dependencies:
+For development, install with dev dependencies. It is recommended to use a virtual environment as a developer:
 
 ```bash
 cd track-manager
 pip install -e ".[dev]"
+
+# Install pre-commit hooks
+pre-commit install
 
 # Run tests
 pytest
