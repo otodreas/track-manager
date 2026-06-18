@@ -512,9 +512,9 @@ class Downloader:
 
         if track.get("album", {}).get("cover"):
             cover_path = track["album"]["cover"].replace("-", "/")
-            doc["cover_art"]["url"] = (
-                f"https://resources.tidal.com/images/{cover_path}/1280x1280.jpg"
-            )
+            doc["cover_art"][
+                "url"
+            ] = f"https://resources.tidal.com/images/{cover_path}/1280x1280.jpg"
 
         doc["provenance"]["track_url"] = track_url
         doc["provenance"]["playlist_url"] = playlist_url
